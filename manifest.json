@@ -1,0 +1,21 @@
+ {
+    "name": "Escala Marshall",
+    "short_name": "Escala",
+    "description": "Calendário de trabalho 5T/2F/2T/5F - 06h às 18h",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#0D47A1",
+    "theme_color": "#1B5E20",
+    "orientation": "portrait-primary",
+    "icons": [{ "src": "icon.svg", "sizes": "192x192", "type": "image/svg+xml", "purpose": "any
+  maskable" }],
+    "categories": ["productivity", "utilities"],
+    "shortcuts": [
+      { "name": "Próximos 7 dias", "short_name": "7 dias", "url": "./index.html?view=week",
+  "description": "Ver próxima semana" },
+      { "name": "Mês atual", "short_name": "Mês", "url": "./index.html?view=month", "description":
+  "Ver mês completo" }
+    ]
+  }
+
+  ---

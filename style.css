@@ -1,0 +1,34 @@
+ :root{--azul:#0D47A1;--azul-bg:#E3F2FD;--verde:#1B5E20;--verde-bg:#E8F5E9;--branco:#FFF;--cinza:#F5F
+  5F5;--texto:#212121;--texto-claro:#757575;--sombra:0 2px 8px rgba(0,0,0,.1)}
+  *{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,sans-serif;background:linear-g
+  radient(180deg,var(--azul-bg),var(--branco)
+  50%,var(--verde-bg));min-height:100vh;color:var(--texto)}
+  header{background:linear-gradient(135deg,var(--azul),var(--verde));color:#fff;padding:24px
+  16px;text-align:center;box-shadow:var(--sombra);position:sticky;top:0;z-index:10}
+  header h1{font-size:1.5rem;font-weight:700}header p{font-size:.9rem;opacity:.9;margin-top:4px}
+  main{padding:16px;max-width:480px;margin:0 auto}
+  .resumo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+  .card{background:var(--branco);border-radius:16px;padding:16px;box-shadow:var(--sombra);border-left:
+  4px solid}
+  .card.trabalho{border-color:var(--azul)}.card.folga{border-color:var(--verde)}
+  .card .label{font-size:.75rem;text-transform:uppercase;color:var(--texto-claro);letter-spacing:.5px}
+  .card .valor{font-size:1.5rem;font-weight:700;margin-top:4px}
+  .card.trabalho .valor{color:var(--azul)}.card.folga .valor{color:var(--verde)}
+  .calendario{background:var(--branco);border-radius:16px;box-shadow:var(--sombra);overflow:hidden}
+  .cal-head{display:grid;grid-template-columns:repeat(7,1fr);background:var(--cinza);padding:10px;font
+  -weight:600;font-size:.75rem;color:var(--texto-claro);text-align:center;text-transform:uppercase}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;padding:8px}
+  .dia{aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;bor
+  der-radius:12px;font-size:.9rem;position:relative;transition:transform .15s}
+  .dia:hover{transform:scale(1.05)}.dia.hoje{outline:2px solid var(--azul);outline-offset:-2px}
+  .dia.trabalho{background:var(--azul-bg);color:var(--azul);font-weight:600}
+  .dia.folga{background:var(--verde-bg);color:var(--verde);font-weight:600}
+  .dia.passado{opacity:.4}.dia .num{font-size:1.1rem;font-weight:700}.dia
+  .turno{font-size:.6rem;margin-top:2px;opacity:.8;text-transform:uppercase}
+  .legend{display:flex;gap:16px;justify-content:center;margin-top:16px;font-size:.8rem}
+  .legend-item{display:flex;align-items:center;gap:6px}.legend-color{width:14px;height:14px;border-rad
+  ius:4px}
+  .legend-color.trabalho{background:var(--azul-bg);border:1px solid
+  var(--azul)}.legend-color.folga{background:var(--verde-bg);border:1px solid var(--verde)}
+  .ciclo-info{text-align:center;padding:12px;font-size:.8rem;color:var(--texto-claro)}.ciclo-info
+  strong{color:var(--texto)}
